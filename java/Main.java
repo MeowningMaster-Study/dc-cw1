@@ -27,7 +27,7 @@ public class Main {
             throw new RuntimeException(e);
         }
         executor.shutdown();
-        System.out.println("All ships served");
+        System.out.printf("All ships served. Port has %d containers", containersCount);
     }
 
     private static Callable<Void> handleShip(Ship ship) {
